@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Populer = ({movies}) => {
   return (
-    <div className='populer'>      
+    <div className='populer'>   selam   m
         {movies.results.map((movie) => (
         <div>
         <Link href={`/film/${movie.id}`}>
