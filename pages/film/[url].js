@@ -11,12 +11,18 @@ export default function FilmDetay({movie}){
             <Head>
                 <title>{movie.title}</title>
             </Head>
-            <div className="cover" style={{ backgroundImage: `url(https://www.themoviedb.org/t/p/original${movie.backdrop_path})`}}>
-      
+            <h3>{movie.title} <div className="cover" style={{ backgroundImage: `url(https://www.themoviedb.org/t/p/original${movie.backdrop_path})`}}>
+           
+           </div></h3>
+
+            <br/><br/><br/><br/>
+            
+     <footer>
+         
+     <div className="summary">Film Detay: {movie.overview }
             </div>
-            <h3>{movie.title}</h3>
-            <div className="summary">Film Detay{movie.overview }
-            </div>
+     </footer>
+
             <style jsx>{`
             .movie {
                 width:1000px;
@@ -34,8 +40,10 @@ export default function FilmDetay({movie}){
             }
             .summary {
                 font-size:18px;
-                color: black;
+                color: red;
                 line-height:1.7;
+                margin-top:500px;
+                ;
                 
             }
             .cover {
@@ -45,7 +53,7 @@ export default function FilmDetay({movie}){
                 left:0;
                 height:500px;
                 background-size:cover;
-                opacity:.9;
+                opacity:.5;
                 
             }
             `}</style>
